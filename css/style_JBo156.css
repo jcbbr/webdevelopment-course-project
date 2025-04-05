@@ -59,7 +59,7 @@ nav ul li a:hover{
 }
 
 .main {
-    padding: 2rem;
+    padding: 10px;
     display: flex;
     justify-content: space-between;
     max-width: 90%;
@@ -176,7 +176,7 @@ form button:hover {
     }
 
     .main > section {
-        width: 90%;
         margin-bottom: 1rem;
+        width: 100%;
     }
 }
