@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Julio Borba">
+    <title>Contact</title>
+    <link href="css/style_JBo156.css" rel="stylesheet">
+    <script src="script/navigation_JBo156.js" defer></script>
+    <script src="script/formValidation_JBo156.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Contact</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="page2_JBo156.html">Education</a></li>
+                <li><a href="page3_JBo156.html">Languages</a></li>
+                <li><a href="page4_JBo156.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main">
+        <section>
+            <h2 class="h2-center">Contact Me</h2>
+            <form id="contactForm" action="#" method="post">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" pattern="^\d{10}$" required>
+                </div>
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <div>
+                    <label for="contactMethod">Preferred Contact Method:</label>
+                    <select id="contactMethod" name="contactMethod" required>
+                        <option value="">Select an option</option>
+                        <option value="email">Email</option>
+                        <option value="phone">Phone</option>
+                    </select>
+                </div>
+                <div>
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </form>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2025 Julio Borba. All rights reserved.</p>
+    </footer>
+</body>
+</html>
