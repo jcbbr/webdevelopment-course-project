@@ -179,4 +179,9 @@ form button:hover {
         margin-bottom: 1rem;
         width: 100%;
     }
+
+    iframe {
+        width: 100%;
+        height: auto;
+    }
 }
