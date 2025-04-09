@@ -8,6 +8,8 @@
     <link href="css/style_JBo156.css" rel="stylesheet">
     <script src="script/navigation_JBo156.js" defer></script>
     <script src="script/formValidation_JBo156.js" defer></script>
+    <script src="script/email.js" defer></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
 <body>
     <header>
@@ -38,16 +40,12 @@
                     <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" pattern="^\d{10}$" required>
                 </div>
                 <div>
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                    <label for="subject">Subject:</label>
+                    <textarea id="subject" name="subject" placeholder="Subject" required></textarea>
                 </div>
                 <div>
-                    <label for="contactMethod">Preferred Contact Method:</label>
-                    <select id="contactMethod" name="contactMethod" required>
-                        <option value="">Select an option</option>
-                        <option value="email">Email</option>
-                        <option value="phone">Phone</option>
-                    </select>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
                 </div>
                 <div>
                     <button type="submit">Submit</button>
