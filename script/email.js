@@ -7,6 +7,13 @@ document.addEventListener("DOMContentLoaded", function() {
     // listen to the form submission
     document.getElementById("contactForm").addEventListener("submit", function (event) {
         event.preventDefault();
+
+        // Validate the form before sending the email
+        if (!validate(this)) {
+            return; // Stop if validation fails
+        }
+
+        // Initialize EmailJS service and template IDs
         let serviceID = "service_dvtjjwl";
         let templateID = "template_3jzlhgm";
 

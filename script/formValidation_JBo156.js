@@ -38,12 +38,12 @@ function validateEmail(form) {
 // Function to validate the Phone input
 function validatePhone(form) {
     let phone = form.elements["phone"];
-    let phonePattern = /^\d{10}$/;
+    let phonePattern = /^\+?\d{10,15}$/;
     if (phone.validity.valueMissing) {
         phone.setCustomValidity("Please enter your phone number.");
         phone.reportValidity();
     } else if (!phonePattern.test(phone.value)) {
-        phone.setCustomValidity("Phone number must be a 10-digit local number.");
+        phone.setCustomValidity("Phone number must be between 10 to 15 digits and can include an optional '+' at the start.");
         phone.reportValidity();
     } else {
         phone.setCustomValidity("");

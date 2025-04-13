@@ -1,3 +1,6 @@
+// This script handles the navigation and fade-out effect for the website.
+
+// Add event listener to wait for the DOM to be fully loaded
 document.addEventListener("DOMContentLoaded", () => {
     let links = document.querySelectorAll("nav ul li a");
     let body = document.body;
