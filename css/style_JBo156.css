@@ -9,35 +9,41 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: paleturquoise;
+    background-color: #EDF2F4;
+    transition: opacity 0.5s ease-in-out;
+}
+
+body.fade-out {
+    opacity: 0;
 }
 
 header {
-    background: #1A535C;
+    background: #2B2D42;
     padding: 1rem 0;
     text-align: center;
     margin: 3x;
+    border: #D90429 2px solid;
 }
 
 header h1 {
     margin: 10px;
-    color: #F7FFF7;
+    color: #EDF2F4;
 }
 
-h2{
-    color: #1A535C;
+h2 {
+    color: #EF233C;
 }
 
 .h2-center {
     text-align: center;
-    color: #1A535C;
+    color: #EF233C;
 }
 
 nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
-    background: #FFE66D;
+    background: #8D99AE;
 }
 
 nav ul li {
@@ -46,16 +52,8 @@ nav ul li {
     list-style: none;
 }
 
-nav ul li a {
-    color: #2B2D42;
-}
-
-nav ul li a:hover{
-    color: #1A535C;
-    background-color: white;
-    border: #1A535C 2px solid;
-    padding: 2px;
-    border-radius: 5px; 
+a {
+    color: #EDF2F4;
 }
 
 .main {
@@ -89,33 +87,33 @@ section {
     text-align: center;
     margin: 1px auto;
     font-size: small;
-    font-weight: bold;
 }
 
-.figure-section {
-    background-color: #FFE66D;
+.figure-image-section {
+    background-color: #8D99AE;
+    border: #D90429 2px solid;
 }
 
 footer {
     text-align: center;
-    background: #1A535C;
-    color: #F7FFF7;
+    background: #2B2D42;
+    color: #EDF2F4;
 }
 
-.list{
-    border: #1A535C 2px solid;
+.list {
+    border: #EF233C 2px solid;
     padding: 2px;
     border-radius: 5px;
     list-style: none;
 }
 
 .sub-list-item:hover {
-    color: #1A535C;
+    color: #EF233C;
 }
 
 .web-icon:hover {
-    background-color: #1A535C;
-    color: #F7FFF7;
+    background-color: #EF233C;
+    color: #EDF2F4;
     border-radius: 100%;
     padding: 2px;
 }
@@ -127,8 +125,9 @@ form {
     padding: 1rem;
     border: 1px solid #ccc;
     border-radius: 5px;
-    background: #f9f9f9;
+    background: #8D99AE;
     box-sizing: border-box;
+    border: #EF233C 2px solid;
 }
 
 form div {
@@ -151,17 +150,41 @@ form input, form textarea, form select, form button {
 
 form input, form textarea, form select {
     box-sizing: border-box;
+    border:#2B2D42 2px solid;
 }
 
 form button {
-    background: #333;
-    color: #fff;
+    background: #2B2D42;
+    color: #EDF2F4;
     border: none;
     cursor: pointer;
 }
 
 form button:hover {
-    background: #555;
+    background: #EF233C;
+}
+
+.whitetext {
+    color: #EDF2F4;
+}
+
+iframe {
+    border-radius: 2%;
+    margin: 0 auto;
+    display: block;
+    border-style: solid;
+    border-color: #EF233C;
+    box-shadow: inset 0 0 5px #EF233C;
+    border-width: 2px;
+}
+
+iframe:hover {
+    outline: 5px solid #EF233C;
+    outline-offset: 2px;   
+}
+
+.centered {
+    text-align: center;
 }
 
 @media (max-width: 768px) {
@@ -169,14 +192,12 @@ form button:hover {
         flex-direction: column; 
     }
 
-
     .main {
         flex-direction: column;
         align-items: center;
     }
 
     .main > section {
-        margin-bottom: 1rem;
         width: 100%;
     }
 
