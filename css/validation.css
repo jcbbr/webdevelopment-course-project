@@ -1,0 +1,17 @@
+/* Validation styles for the contact form inputs and textareas when valid */
+ input#name:focus:valid,
+ input#email:focus:valid,
+ input#phone:focus:valid,
+ textarea#subject:focus:valid,
+ textarea#message:focus:valid{
+   background: palegreen bottom right/contain no-repeat; 
+}
+
+/* Validation styles for the contact form inputs and textareas when invalid */
+ input#name:focus:invalid,
+ input#email:focus:invalid,
+ input#phone:focus:invalid,
+ textarea#subject:focus:invalid,
+ textarea#message:focus:invalid{
+   background: palevioletred bottom right/contain no-repeat; 
+}

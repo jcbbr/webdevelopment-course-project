@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
         emailjs.sendForm(serviceID, templateID, this).then(
             (response) => {
                 console.log("SUCCESS!", response.status, response.text);
-                alert("SUCCESS!");
+                alert("Your message has been sent successfully. Thank you for reaching out!");
             },
             (error) => {
                 console.log("FAILED...", error);
